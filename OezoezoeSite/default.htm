@@ -1,0 +1,152 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"> 
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" type="image/png" href="/favicon.png">
+		<title>Oezoezoe Software</title>
+		<link href="/css/bootstrap.css" rel="stylesheet">
+		<link href="/css/stylesheet.css" rel="stylesheet">
+		<noscript>
+			<style>
+				#banner
+				{
+					opacity: 1;
+					background-image: none;
+				}
+				
+				#code_div 
+				{
+					background: url('/img/banner_road_still.jpg') no-repeat 50% 0;
+				}
+				
+				#page_header
+				{
+					margin: 0;
+					border-bottom: 1px solid #81ADDF;
+					background: #D5E4F5 url('../img/header_bg_blue.png') repeat-y 50% 0;
+				}
+				
+				#page_canvas
+				{
+					display: block;
+				}
+			</style>
+		</noscript>
+	</head>
+
+	<body>		<div id="page_canvas">
+			<div id="page_header" class="navbar navbar-default navbar-static-top">
+				<div class="container">
+					<div class="navbar-header">
+					   <div id="site_logo_div">
+							<img id="site_logo1" src="/img/logo1.png" alt="">
+							<img id="site_logo2" src="/img/logo2.png" alt="">
+							<img id="site_logo" src="/img/logo_full.png" alt="">
+							
+							<div id="site_logo_name_div">
+								<div id="site_logo_name1" class="site_logo_name">OE</div>
+								<div id="site_logo_name2" class="site_logo_name">ZOE</div>						
+								<div id="site_logo_name3" class="site_logo_name">ZOE</div>
+								<div id="site_logo_name">OEZOEZOE</div>
+							</div>
+					   </div>
+					</div>
+
+					<div class="navbar-collapse collapse">
+						<div>
+							<ul id="nav_buttons" class="nav navbar-right">
+								<li><a href="#panel1" rel="panel">Over ons</a></li>
+								<li><a href="#panel2" rel="panel">Portfolio</a></li>
+								<li><a href="#panel3" rel="panel">Contact</a></li>
+							</ul>
+							<div id="settings_div" class="nav navbar-right">
+								<form id="settings" action="/">
+									Achtergrond: 
+									<select id="page_header_color" data-cip-id="cIPJQ342845639">
+										<option value="red">Rood</option>
+										<option value="green">Groen</option>
+										<option value="blue">Blauw</option>
+										<option value="purple">Paars</option>
+										<option value="grey">Grijs</option>
+										<option value="rand">Willekeurig</option>
+									</select> | 
+									<input type="checkbox" id="page_animation"> Opbouwing<br>
+									<input type="checkbox" id="show_banner" onclick="jQuery.checkBanner()"> Toon banner | 
+									<span id="code_animation_text"><input type="checkbox" id="code_animation"> Code animatie</span> | 
+									<a id="save_settings" href="javascript: jQuery.saveSettings()">Opslaan</a>
+								</form>
+							</div>
+							<div id="settings_saved" class="nav navbar-right">
+								Wijzigigen zijn te zien na pagina vernieuwing.
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div id="page_content" class="container">
+				
+				<div id="intro_div">
+					<div id="intro_text">
+						Oezoezoe Software kan voor u verschillende diensten uitvoeren. Zoals het programmeren van een nieuwe website of het reviewen en optimaliseren van bestaande code.
+					</div>
+				</div>
+				
+				<div id="banner_div">
+					<div id="banner">
+						<div class="banner_text_div">
+							<div id="banner_text">
+								The way to go!
+							</div>
+						</div>
+						<div id="code_div">
+							<div id="code">
+								<div id="code_left">
+								</div>
+								<div id="code_right">
+								</div>
+							</div>
+						</div>
+					</div>		  
+				</div>		  
+						
+				<div class="content">
+					<div id="panels">
+						<div class="content_div" id="panel1">
+							<noscript>
+								&amp;amp;amp;lt;h1&amp;amp;amp;gt;Over ons&amp;amp;amp;lt;/h1&amp;amp;amp;gt;
+							</noscript>
+							<p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+							
+						</div>
+						<div class="content_div" id="panel2">
+							<noscript>
+								&amp;amp;amp;lt;h1&amp;amp;amp;gt;Portfolio&amp;amp;amp;lt;/h1&amp;amp;amp;gt;
+							</noscript>
+							
+							<p>Maecenas sed diam eget risus varius blandit sit amet non magna. Donec id elit non mi porta gravida at eget metus. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
+							<p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec ullamcorper nulla non metus auctor fringilla.</p>
+						</div>
+						<div class="content_div" id="panel3">
+							<noscript>
+								&amp;amp;amp;lt;h1&amp;amp;amp;gt;Contact&amp;amp;amp;lt;/h1&amp;amp;amp;gt;
+							</noscript>
+							
+							<p>Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam id dolor id nibh ultricies vehicula.</p>
+						</div>
+					</div>
+					
+					<div id="page_footer">
+						© 2014 Oezoezoe B.V.<span id="settings_link"> <a href="javascript: jQuery.showSettings()">Instellingen</a>.</span><br>KvK: 53998014.</div>
+				</div>
+			</div>
+		</div>
+	
+		<script src="http://code.jquery.com/jquery-1.9.0.js"></script>
+		<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+		<script src="/js/jquery.script.js"></script>
+		<script src="/js/jquery.rotate.js"></script>
+	</body>
+</html>
